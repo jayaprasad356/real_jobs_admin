@@ -41,6 +41,7 @@
                 <ImageView
                     android:id="@+id/imgCloseTicket"
                     android:layout_width="wrap_content"
+                    android:visibility="gone"
                     android:layout_height="wrap_content"
                     android:src="@drawable/ic_baseline_close_24"
                     android:padding="@dimen/_5sdp"

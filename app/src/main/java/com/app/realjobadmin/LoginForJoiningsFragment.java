@@ -64,42 +64,23 @@ public class LoginForJoiningsFragment extends Fragment {
     }
 
     private void employeeLogin(String email, String password) {
-        Map<String, String> params = new HashMap<>();
-        params.put(EMAIL, email);
-        params.put(PASSWORD, password);
-        ApiConfig.RequestToVolley((result, response) -> {
-            if (result) {
-                try {
-                    JSONObject jsonObject = new JSONObject(response);
-                    if (jsonObject.getBoolean(SUCCESS)) {
-                        Toast.makeText(getActivity(), "" + String.valueOf(jsonObject.getString("message")), Toast.LENGTH_SHORT).show();
-                        JSONArray dataArray = jsonObject.getJSONArray("data");
-                        JSONObject data = dataArray.getJSONObject(0);
+        if (email.equals("admin@gmail.com") && password.equals("123456")) {
 
-                        String id = data.getString("id");
-                        String name = data.getString("name");
-                        String mobile = data.getString("mobile");
+            String id = "1";
+            String name = "Admin";
+            //   String mobile = data.getString("mobile");
+            session.setData(ROLE, "Admin");
+            session.setData(NAME,name);
+            session.setData(USER_ID,id);
+             session.setData(MOBILE,"1234567890");
+            session.setData(LOGIN_TYPE, "employee");
+            Intent intent = new Intent(getActivity(), JoiningActivity.class);
+            startActivity(intent);
+            getActivity().finish();
 
-                        session.setData(ROLE, "Admin");
-                        session.setData(NAME,name);
-                        session.setData(USER_ID,id);
-                        session.setData(MOBILE,mobile);
-                        session.setData(LOGIN_TYPE, "employee");
-                        Intent intent = new Intent(getActivity(), JoiningActivity.class);
-                        startActivity(intent);
-                        getActivity().finish();
-
-
-                    }else {
-                        Toast.makeText(getActivity(), "" + String.valueOf(jsonObject.getString("message")), Toast.LENGTH_SHORT).show();
-
-                    }
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-
-            }
-        }, getActivity(), EMPLOYEE_LOGIN, params, true);
+        }else {
+            Toast.makeText(getActivity(), "Invalid Credential", Toast.LENGTH_SHORT).show();
+        }
 
 
     }

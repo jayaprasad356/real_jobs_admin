@@ -87,6 +87,7 @@
         android:text="Total Follow Ups = 100"/>
     <HorizontalScrollView
         android:id="@+id/hori"
+        android:visibility="gone"
         android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

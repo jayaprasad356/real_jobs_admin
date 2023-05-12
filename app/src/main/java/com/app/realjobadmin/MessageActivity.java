@@ -981,7 +981,7 @@ public class MessageActivity extends BaseActivity implements View.OnClickListene
                         hashMap.put(EMP_NAME, session.getData(NAME));
                         hashMap.put(EMP_MOBILE, session.getData(MOBILE));
                         hashMap.put(EMP_ID, session.getData(USER_ID));
-                        hashMap.put(TYPE, FOLLOWUP_TICKET);
+                        hashMap.put(TYPE, JOINING_TICKET);
                         reference.child(JOINING_TICKET).child(Mobile).updateChildren(hashMap);
 //
 //                        DatabaseReference ref1 = FirebaseDatabase.getInstance().getReference().child(JOINING_TICKET).child(Mobile);
