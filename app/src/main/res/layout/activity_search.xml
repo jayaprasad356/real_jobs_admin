@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchActivity">
+
+    <LinearLayout
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/edMobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Mobile number"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/black"
+            android:layout_weight="3"
+            android:textColorHint="@color/black"
+            android:padding="@dimen/_10sdp"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/ed_bg"
+            />
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Search"/>
+
+    </LinearLayout>
+    <com.simplecityapps.recyclerview_fastscroll.views.FastScrollRecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/line1"
+        android:background="@android:color/transparent"
+        app:fastScrollPopupBgColor="@color/colorAccent"
+        app:fastScrollPopupTextColor="@android:color/primary_text_dark"
+        app:fastScrollThumbColor="@color/colorAccent" />
+
+
+
+</RelativeLayout>

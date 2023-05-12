@@ -1,0 +1,77 @@
+{
+  "project_info": {
+    "project_number": "936231622591",
+    "firebase_url": "https://real-jobs-53638-default-rtdb.firebaseio.com",
+    "project_id": "real-jobs-53638",
+    "storage_bucket": "real-jobs-53638.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:936231622591:android:11c52826449dc218dbb30a",
+        "android_client_info": {
+          "package_name": "com.app.realjobadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "936231622591-8c9ibi0if3f41881u44m77bnm1of3b56.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBw3bCbn_CZj2wCARoFOJVn3ZCE7veF_nI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "936231622591-8c9ibi0if3f41881u44m77bnm1of3b56.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:936231622591:android:8fecb266fe48ec20dbb30a",
+        "android_client_info": {
+          "package_name": "com.app.realjobs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "936231622591-cngi1ekp9non4hmn1acl3h7e0a46kvd4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.realjobs",
+            "certificate_hash": "71b05e2f0f539de77a9c856f84ae56e35d890f78"
+          }
+        },
+        {
+          "client_id": "936231622591-8c9ibi0if3f41881u44m77bnm1of3b56.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBw3bCbn_CZj2wCARoFOJVn3ZCE7veF_nI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "936231622591-8c9ibi0if3f41881u44m77bnm1of3b56.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

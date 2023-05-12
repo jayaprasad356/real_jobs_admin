@@ -1,0 +1,164 @@
+{
+  "project_info": {
+    "project_number": "163066123583",
+    "firebase_url": "https://fire-chat-a022a-default-rtdb.firebaseio.com",
+    "project_id": "fire-chat-a022a",
+    "storage_bucket": "fire-chat-a022a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:163066123583:android:3245ed7b822bbd69182f8a",
+        "android_client_info": {
+          "package_name": "com.app.abcdadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "163066123583-riv20tb1ed3oi7ifap5h1370525mi8vc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDVK2Ld5-IKcSxqf_9gTtkx5bUVmTR9FM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "163066123583-riv20tb1ed3oi7ifap5h1370525mi8vc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:163066123583:android:0adc1f20da8f4efd182f8a",
+        "android_client_info": {
+          "package_name": "com.app.abcdapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "163066123583-riv20tb1ed3oi7ifap5h1370525mi8vc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDVK2Ld5-IKcSxqf_9gTtkx5bUVmTR9FM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "163066123583-riv20tb1ed3oi7ifap5h1370525mi8vc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:163066123583:android:dbba6fe4406112d2182f8a",
+        "android_client_info": {
+          "package_name": "com.bytesbee.firebase.chat.activities"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "163066123583-riv20tb1ed3oi7ifap5h1370525mi8vc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDVK2Ld5-IKcSxqf_9gTtkx5bUVmTR9FM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "163066123583-riv20tb1ed3oi7ifap5h1370525mi8vc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:163066123583:android:63243c9d4240e2f8182f8a",
+        "android_client_info": {
+          "package_name": "com.devlomi.fireapp.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "163066123583-riv20tb1ed3oi7ifap5h1370525mi8vc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDVK2Ld5-IKcSxqf_9gTtkx5bUVmTR9FM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "163066123583-riv20tb1ed3oi7ifap5h1370525mi8vc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:163066123583:android:45de008e7280f069182f8a",
+        "android_client_info": {
+          "package_name": "com.gm.fireapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "163066123583-qd01rgd4dn6k5mbqsmtnm15p994et23p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gm.fireapp",
+            "certificate_hash": "8881fdd25c090af0389a1c16daa2b5a47b80e897"
+          }
+        },
+        {
+          "client_id": "163066123583-riv20tb1ed3oi7ifap5h1370525mi8vc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDVK2Ld5-IKcSxqf_9gTtkx5bUVmTR9FM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "163066123583-riv20tb1ed3oi7ifap5h1370525mi8vc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

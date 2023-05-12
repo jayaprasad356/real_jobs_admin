@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="duplicateIds"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".TicketFragment">
+
+    <Spinner
+        android:id="@+id/spinCategory"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginHorizontal="@dimen/_5sdp"
+        android:entries="@array/categories" />
+
+    <HorizontalScrollView
+        android:id="@+id/hori"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinCategory"
+        android:layout_centerHorizontal="true"
+        android:paddingStart="@dimen/_5sdp"
+        tools:ignore="RtlSymmetry">
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:singleSelection="true">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipPending"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Pending"
+                android:textColor="@color/white"
+                app:chipBackgroundColor="@color/bg_pending" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipOpened"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Opened"
+                android:textColor="@color/white"
+                app:chipBackgroundColor="@color/bg_open" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipClosed"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Closed"
+                android:textColor="@color/white"
+                app:chipBackgroundColor="@color/bg_closed" />
+
+        </com.google.android.material.chip.ChipGroup>
+
+    </HorizontalScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/Def"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/hori"
+        android:visibility="visible"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:text="Refer a friend"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/tvPendingCount1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pending = 234"/>
+                    <TextView
+                        android:id="@+id/tvOpenedCount1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:text="Opened = 234"/>
+                    <TextView
+                        android:id="@+id/tvClosedCount1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:text="Closed = 234"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:text="App issue"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/tvPendingCount2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pending = 234"/>
+                    <TextView
+                        android:id="@+id/tvOpenedCount2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:text="Opened = 234"/>
+                    <TextView
+                        android:id="@+id/tvClosedCount2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:text="Closed = 234"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:text="Withdrawl issue"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/tvPendingCount3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="Pending = 234"/>
+                    <TextView
+                        android:id="@+id/tvOpenedCount3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        tools:text="Opened = 234"/>
+                    <TextView
+                        android:id="@+id/tvClosedCount3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        tools:text="Closed = 234"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:text="Refers bonus issue"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/tvPendingCount4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="Pending = 234"/>
+                    <TextView
+                        android:id="@+id/tvOpenedCount4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        tools:text="Opened = 234"/>
+                    <TextView
+                        android:id="@+id/tvClosedCount4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        tools:text="Closed = 234"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:text="Others"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/tvPendingCount5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="Pending = 234"/>
+                    <TextView
+                        android:id="@+id/tvOpenedCount5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        tools:text="Opened = 234"/>
+                    <TextView
+                        android:id="@+id/tvClosedCount5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        tools:text="Closed = 234"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <com.simplecityapps.recyclerview_fastscroll.views.FastScrollRecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/Def"
+        android:background="@android:color/transparent"
+        app:fastScrollPopupBgColor="@color/colorAccent"
+        app:fastScrollPopupTextColor="@android:color/primary_text_dark"
+        app:fastScrollThumbColor="@color/colorAccent" />
+
+
+
+</RelativeLayout>

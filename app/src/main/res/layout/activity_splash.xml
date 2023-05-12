@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashActivity"
+    android:background="@drawable/bg"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/_120sdp"
+            android:backgroundTint="#8f7f26"
+            >
+
+
+
+
+
+            <ImageView
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="@dimen/_200sdp"
+                android:src="@drawable/logo_realjobs"
+                />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Admin"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_25sdp"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_10sdp"/>
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>
